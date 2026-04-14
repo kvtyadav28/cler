@@ -315,21 +315,24 @@ body{color:#797979;font-weight:400;font-size:16px;line-height:30px}h1{color:#1d4
     display: none;
 }		</style>
         <style>
-            @media screen and (max-width: 991px) {
-            .mobile-header .sticky-outer {
-                min-height: 70px !important;
-                height: auto !important;
-            }
+@media screen and (max-width: 991px) {
+  .mobile-header .sticky-head,
+  .mobile-header .header-sticky {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
 
-            .mobile-header .sticky-head,
-            .mobile-header .header-sticky {
-                -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                will-change: transform;
-            }
-            }
+  .mobile-header .sticky-outer {
+    height: auto !important;
+    min-height: 70px !important;
+  }
+}
 </style>
 		</head>
 <body class="home wp-singular page-template-default page page-id-15407 wp-custom-logo wp-embed-responsive wp-theme-corpkit wp-child-theme-corpkit-child elementor-default elementor-kit-13 elementor-page elementor-page-15407">
